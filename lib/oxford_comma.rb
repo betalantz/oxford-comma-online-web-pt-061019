@@ -11,7 +11,7 @@ def oxford_comma(array)
     when array.size > 2
       array.pop
       result = array.join(", ")
-      result << "and #{last}"
+      result << ", and #{last}"
       result
   end
 end
