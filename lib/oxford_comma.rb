@@ -4,7 +4,8 @@ def oxford_comma(array)
   when 1
     last
   when 2
-    result = array.pop.join
+    array.pop
+    result = array.join
     result << " and #{last}"
     result
   end
