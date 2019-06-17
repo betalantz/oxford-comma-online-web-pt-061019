@@ -8,6 +8,11 @@ def oxford_comma(array)
     result = array.join
     result << " and #{last}"
     result
+  when > 2
+    array.pop
+    result = array.join(", ")
+    result << "and #{last}"
+    result
   end
 end
 
