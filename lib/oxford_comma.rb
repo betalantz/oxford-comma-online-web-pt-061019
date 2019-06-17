@@ -1,5 +1,5 @@
 def oxford_comma(array)
-  last = array[array.last]
+  last = array.last
   case array
     when array.size == 1
       return array.join(", ")
