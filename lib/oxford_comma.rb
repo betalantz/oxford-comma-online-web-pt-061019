@@ -3,9 +3,11 @@ def oxford_comma(array)
   case array.size
   when 1
     last
-  when array.size == 2
-    array.pop
+  when 2
+    result = array.pop.join
+    result << " and #{last}"
+    result
   end
 end
 
-puts oxford_comma(["kiwi"])
+puts oxford_comma(["kiwi", "apple"])
