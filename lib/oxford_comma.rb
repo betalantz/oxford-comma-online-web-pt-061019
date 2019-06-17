@@ -1,14 +1,14 @@
 def oxford_comma(array)
   last = array.last
-  case array.size
-  when 1
+  case
+  when array.size == 1
     last
-  when 2
+  when array.size == 2
     array.pop
     result = array.join
     result << " and #{last}"
     result
-  when > 2
+  when array.size > 2
     array.pop
     result = array.join(", ")
     result << "and #{last}"
